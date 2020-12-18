@@ -2,6 +2,19 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.footer{
+    background-color: #3f3250;
+}
+
+.foot{
+    list-style: none;
+    display: block ruby;
+}
+
+.foot li{
+    padding: 20px;
+}
+
 .head{
     text-decoration: underline #E14658;
 }
