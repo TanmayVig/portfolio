@@ -18,13 +18,16 @@
 <body>
     
     {% include "components/nav.html" %}
-    <div class="container">
         <section id="landing">
             {% include "components/landing.html" %}
         </section>
-
-        <section id="about">
+    <div class="container">
+        <section id="about" style="margin: 10px;">
             {% include "components/about.html" %}
+        </section>
+        <hr>
+        <section class="skills">
+            {% include "components/skills.html" %}
         </section>
     </div>
     {% include "components/footer.html" %}

@@ -2,7 +2,27 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+hr{
+    color: #c0b3a0;
+}
+
+.solo{
+    text-align: center;
+}
+
+.button{
+    color: #E14658;
+    border-color: #E14658;
+}
+
+.button:hover{
+    color: #22252c;
+    border-color: #E14658;
+    background-color: #E14658;
+}
+
 .footer{
+    margin-top: 10px;
     background-color: #3f3250;
 }
 
@@ -19,9 +39,10 @@ body{
     text-decoration: underline #E14658;
 }
 
-.col-sm-8{
-    border-left: 2px solid black;
+.list-group-item{
+    border-color: #c0b3a0;
 }
+
 .img-thumbnail{
     width: 100% !important;
     box-shadow: 2px 2px 5px #c0b3a0;
@@ -48,6 +69,10 @@ body{
 
 .nav-link{
     margin: 0 30px;
+}
+
+.card{
+    border: none !important;
 }
 
 a{
