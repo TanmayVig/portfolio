@@ -28,7 +28,7 @@ hr{
 
 .foot{
     list-style: none;
-    display: block ruby;
+    display: inline-flex;
 }
 
 .foot li{
@@ -54,6 +54,19 @@ hr{
     width: auto !important;
     height: 100% !important;
 }
+
+
+.card-style{
+    background-color: #3f3250;
+    color: #E14658;
+    box-shadow: 2px 2px #c0b3a0;
+    border-radius: 6px;
+}
+
+.card-text{
+    height: 10vh;
+}
+
 .wrapper{
     width: 100%;
     display: flex;

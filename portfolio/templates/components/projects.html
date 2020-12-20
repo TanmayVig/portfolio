@@ -1,0 +1,24 @@
+{% load static %}
+<div class="project">
+    <h1 class="text-center"><span class="head solo">Projects</span></h1>
+    <div class="row row-cols-1 row-cols-md-3 wrapper">
+        {% for project in projects %}
+            {% if project.show == True %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={{project.pic.url}} class="card-img-top" alt="...">
+                        <div class="card-body card-style">
+                          <h5 class="card-title">{{ project.name }}</h5>
+                          <p class="card-text">{{ project.about }}</p>
+                          <hr>
+                          <ul class="foot">
+                          <li><a href={{project.git}}><em class="fab fa-github"></em></a></li>
+                          <li><a href={{project.link}}><em class="fas fa-link"></em></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
