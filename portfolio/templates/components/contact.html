@@ -1,0 +1,19 @@
+
+{% load static %}
+{{ form.media }}
+<div class="contact">
+  <h1 class="text-center"><span class="head solo">Contact Me</span></h1>
+  <div class="form">
+    <form method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button class="btn button" type="submit">submit</button>
+    </form>
+  </div>
+  <script>
+    let name = document.getElementById("id_name")
+    name.setAttribute('placeholder','Name')
+    let email = document.querySelector("#id_email")
+    email.setAttribute('placeholder','Email')
+  </script>
+</div>

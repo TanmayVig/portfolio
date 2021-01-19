@@ -20,11 +20,13 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 
 from django.conf.urls.static import static
 from django.conf import settings
+from froala_editor import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Tanmay_Creates.urls')),
-    path('favicon.ico',RedirectView.as_view(url=staticfiles_storage.url('media/logo_final_1.png')))
+    path('favicon.ico',RedirectView.as_view(url=staticfiles_storage.url('media/logo_final_1.png'))),
+    path('froala_editor/',include('froala_editor.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -104,3 +104,23 @@ a:hover{
 /* .nav-link:hover{
     font-size: large;
 } */
+
+input{
+    border: 0px;
+    border-bottom: 1px dotted #e14658f6;
+    background-color:#e1465848;
+    border-radius: 30px;
+}
+
+.btn-success{
+    background-color:  #E14658 !important;
+}
+
+.btn-success:hover{
+   /* color: #FFF9E9
+   #5A8100
+   #FFB400
+   #FF6C02;  */
+    background-color: #22252c !important;
+    /* text-shadow: #FFF9E9; */
+}
